@@ -8,8 +8,8 @@ jobs:
       - checkout
       - run:
         name: Dependencies installation
-        command: npm install
+        command: cd ./ && npm install
 
       - run:
         name: eslint test
-        command: npm run eslint
+        command: cd ./ && npm run eslint
