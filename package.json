@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/RustyPaper/KnK#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^5.15.0",
     "eslint-plugin-react": "^7.12.4"
   },
