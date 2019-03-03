@@ -9,13 +9,13 @@ const htmlWebpackPLuginConfig = new HtmlWebpackPlugin({
 module.exports={
 	entry: path.join(process.cwd(),'frontEnd','index.js'),
 	module: {
-		loaders:[
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
+		rules:[{
+			test: /\.js$/,
+			exclude: /node_modules/,
+			use: [{
 				loader: 'babel-loader'
-			}
-		]
+			}]
+		}]
 	},
 	output: {
 		filename: 'index.js',
