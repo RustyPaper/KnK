@@ -1,0 +1,25 @@
+{
+  "name": "knk",
+  "version": "1.0.0",
+  "description": "wyjebane jajca na to",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RustyPaper/KnK.git"
+  },
+  "author": "Majkel bej",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RustyPaper/KnK/issues"
+  },
+  "homepage": "https://github.com/RustyPaper/KnK#readme",
+  "devDependencies": {
+    "eslint": "^5.15.0"
+  },
+  "dependencies": {
+    "socket.io": "^2.2.0"
+  }
+}
