@@ -5,6 +5,7 @@ jobs:
       - image: circleci/node:10.15.2
     
     steps:
+      - checkout
       - run:
         name: Dependencies installation
         command: npm install
