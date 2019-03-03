@@ -4,7 +4,8 @@
   "description": "wyjebane jajca na to",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint":"node node_modules/eslint/bin/eslint.js --ignore-path ./.eslintignore ./"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,8 @@
   },
   "homepage": "https://github.com/RustyPaper/KnK#readme",
   "devDependencies": {
-    "eslint": "^5.15.0"
+    "eslint": "^5.15.0",
+    "eslint-plugin-react": "^7.12.4"
   },
   "dependencies": {
     "socket.io": "^2.2.0"
