@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "node node_modules/eslint/bin/eslint.js --ignore-path ./.eslintignore ./"
+    "eslint": "node node_modules/eslint/bin/eslint.js --ignore-path ./.eslintignore ./",
+    "build_frontend": "webpack",
+    "start_frontend": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -18,13 +20,14 @@
   },
   "homepage": "https://github.com/RustyPaper/KnK#readme",
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
-    "babel-preset-react": "^6.24.1",
     "eslint": "^5.15.0",
     "eslint-plugin-react": "^7.12.4",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
