@@ -7,9 +7,9 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Dependencies installation
-        command: cd ./ && npm install
+          name: Dependencies installation
+          command: cd ./ && npm install
 
       - run:
-        name: eslint test
-        command: cd ./ && npm run eslint
+          name: eslint test
+          command: cd ./ && npm run eslint
