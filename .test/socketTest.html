@@ -1,0 +1,36 @@
+<html>
+    <head>
+       
+    </head>
+    <body>
+
+            <div>
+                    <p>Status serwera: <p id="server_status"></p></p>
+                    <button onclick="sendToServer()">Wyslij do serwera</button>
+                    <p>Wiadomosc od serwera: <p id="message_value"></p></p>
+            </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+        <script>
+            const socket = io("http://localhost:3000")
+            
+            socket.on('connected', connectedCallback)
+            socket.on('message', messageCallback)
+
+            function connectedCallback(data){
+                document.getElementById("server_status").innerHTML = data.msg
+            }
+            function messageCallback(data){
+                document.getElementById("message_value").innerHTML = data.msg
+            }
+
+            function sendToServer(){
+                socket.emit('message','wiadomosc od klienta')
+            }
+            
+        </script>
+
+    
+
+    </body>
+</html>
