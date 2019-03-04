@@ -1,2 +1,3 @@
 node_modules/
 buildedFront/
+.DS_Store
