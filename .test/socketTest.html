@@ -15,17 +15,18 @@
             const socket = io("http://localhost:3000")
             
             socket.on('connected', connectedCallback)
-            socket.on('message', messageCallback)
+            socket.on('info', data => {
+                document.getElementById("message_value").innerHTML = data.msg
+            })
+
 
             function connectedCallback(data){
                 document.getElementById("server_status").innerHTML = data.msg
             }
-            function messageCallback(data){
-                document.getElementById("message_value").innerHTML = data.msg
-            }
+          
 
             function sendToServer(){
-                socket.emit('message','wiadomosc od klienta')
+                socket.emit('joinToRoom', {roomName:'test5'})
             }
             
         </script>
