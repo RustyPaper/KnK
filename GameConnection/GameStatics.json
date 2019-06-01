@@ -1,0 +1,14 @@
+{
+	"EVENTS": {
+		"JOIN_TO_ROOM": "joinToRoom",
+		"UPDATE_STATE": "updateState",
+		"INFO": "info"
+	},
+
+	"MESSAGES": {
+		"ERRORS": {
+			"ROOM_NOT_EXISTS": "Nie ma pokoju o takiej nazwie",
+			"MAX_PLAYERS_IN_ROOM": "Osiagnieto maksymalna liczbe graczy w pokoju"
+		}
+	}
+}

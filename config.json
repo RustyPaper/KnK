@@ -1,0 +1,7 @@
+{
+    "server" : {
+        "port": 3000
+    },
+    "devMode": true,
+    "logDirectory": ".logs"
+}
